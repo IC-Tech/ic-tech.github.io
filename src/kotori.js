@@ -29,9 +29,9 @@ class site extends IAR {
 						{t: 'br'},
 						{t: 'b', txt: 'Access:'}, ' private',
 						{t: 'br'},
-						{t: 'b', txt: 'Project status'}, ' maintaining',
+						{t: 'b', txt: 'Project status:'}, ' maintaining',
 						{t: 'br'},
-						{t: 'b', txt: 'Program status'}, ' unstable'
+						{t: 'b', txt: 'Program status:'}, ' unstable'
 					]},
 					{t: 'h3', txt: 'Description'},
 					{t: 'p', cl: 'disc', txt: 'Kotori is an assistant bot made by me (Imesh Chamara). project kotori is different than all the project I have created because it\'s not just a project it\'s a concept. I got that concept by Iron-man, I wanted my own Jarvis, I wanted my own assistant program. the first versions of kotori, she got little AI system but I couldn\'t train the database properly and now she looks like a command bot. she got lots of features and I still adding more.'},

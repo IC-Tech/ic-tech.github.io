@@ -1,0 +1,33 @@
+$col0: #111d5c;
+$col1: #ffffff;
+$col2: #ff397f;
+$col3: #25368e;
+#root, .main {
+	background-color: $col0;
+	color: $col1;
+	font-family: Ubuntu;
+}
+.main {
+	display: flex !important;
+	flex-direction: column;
+	min-height: 100vh;
+	.head {
+		display: flex;
+		flex-direction: column;
+		box-shadow: 0 0 10px #0006;
+		background-color: $col3;
+		span {
+			display: block;
+			font-size: 22px;
+			text-align: center;
+			padding: 10px 20px;
+			line-height: 1;
+		}
+	}
+	.cont {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 1;
+	}
+}

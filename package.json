@@ -2,6 +2,7 @@
 	"name": "ic-tech.github.io",
 	"version": "1.0.0",
 	"description": "",
+	"homepage": "https://ic-tech.github.io/",
 	"main": "ic-web-pack/watch.js",
 	"scripts": {
 		"dev": "node ic-web-pack/watch --serve --mode=dev -l config.js",

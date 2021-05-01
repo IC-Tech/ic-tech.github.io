@@ -48,8 +48,8 @@ var pages = [
 	return a
 })
 const prf = {
-	js: a => `<script charset="utf-8" defer="defer" src="${JS_DIR}/${a}"></script>`,
-	css: a => `<link rel="stylesheet" type="text/css" href="${CSS_DIR}/${a}"/>`
+	js: a => `<script charset="utf-8" defer="defer" src="/${JS_DIR}/${a}"></script>`,
+	css: a => `<link rel="stylesheet" type="text/css" href="/${CSS_DIR}/${a}"/>`
 }
 module.exports = {
 	source: 'src/',
@@ -60,7 +60,7 @@ module.exports = {
 		r.copyDir(source + '/public', output)
 
 		await js_build({
-			input: pages.map(a => a.js),
+			input: pages.map(a => a.js).filter(a => a),
 			css_dir: output + '/' + CSS_DIR,
 			js_dir: output + '/' + JS_DIR,
 			mode: r.config.mode,

@@ -103,7 +103,7 @@ const build = async a => {
 	mkdir(config.build_)
 	rm(config.build_)
 	try {
-		if(typeof config.build == 'function') await config.build(config.source, config.build_,{config, copyDir, rm, update})
+		if(typeof config.build == 'function') await config.build(config.source, config.build_, {mkdir, config, copyDir, rm, update})
 		else copyDir(config.source, config.build_)
 	}
 	catch (e) {

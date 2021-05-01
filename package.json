@@ -1,6 +1,6 @@
 {
-	"name": "web-template",
-	"version": "1.0.1",
+	"name": "ic-tech.github.io",
+	"version": "1.0.0",
 	"description": "",
 	"main": "ic-web-pack/watch.js",
 	"scripts": {

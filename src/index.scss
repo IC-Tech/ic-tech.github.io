@@ -1,23 +1,25 @@
 @import 'main';
-.main {
-	.cont {
-		span {
-			display: block;
-			text-align: center;
-		}
+.main > .cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	> * {
+		text-align: center;
+		margin: 4px auto;
 	}
-	.btns {
-		margin-top: 32px;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		> * {
-			background-color: $col2;
-			text-decoration: none;
-			padding: 6px 12px;
-			margin: 4px 8px;
-			font-size: 19px;
-			color: $col1;
-		}
+	img {
+		width: 80%;
+		max-width: 460px;
+		border-radius: 6px;
+	}
+	.a {
+		font-size: 40px;
+	}
+	.b {
+		font-size: 18px;
+	}
+	.c {
+		margin-top: -4px;
+		font-size: 14px;
 	}
 }

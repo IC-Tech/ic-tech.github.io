@@ -25,19 +25,13 @@ var pages = [
 		page: 'index',
 		html: 'src/index.html',
 		js: 'src/index.js',
-		css: 'src/index.css' // only use for html addition, css files are imported to build from js files on the source code
+		css: 'src/index.css'
 	},
 	{
-		page: 'page-01',
+		page: 'projects/kotori',
 		html: 'src/index.html',
-		js: 'src/page-1.js',
-		css: 'src/page-1.css'
-	},
-	{
-		page: 'page-02',
-		html: 'src/index.html',
-		js: 'src/page-2.js',
-		css: 'src/page-2.css'
+		js: 'src/kotori.js',
+		css: 'src/kotori.css'
 	}
 ]
 
@@ -78,6 +72,7 @@ module.exports = {
 				if(pages[i].css) d += prf.css(paths_(pages[i].css, source))
 				return d + a
 			})
+			r.mkdir(output + '/projects')
 			fs.writeFileSync(output + '/' + pages[i].page + '.html', r.config.mode == 'dev' ? a : html.f(a, html_banner))
 		}
 	}

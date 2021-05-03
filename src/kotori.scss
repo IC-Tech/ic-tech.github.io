@@ -23,4 +23,17 @@
 		border: 6px solid c(5);
 		margin-bottom: 20px;
 	}
+	.faq {
+		.que, .ans {
+			display: inline-block;
+		}
+		.que {
+			font-weight: bold;
+		}
+		.ans {
+			padding-left: 10px;
+			margin-bottom: 10px;
+			font-size: 15px;
+		}
+	}
 }

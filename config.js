@@ -40,6 +40,12 @@ var pages = [
 		css: 'src/megumi.css'
 	},
 	{
+		page: 'projects/ami',
+		html: 'src/index.html',
+		js: 'src/ami.js',
+		css: 'src/ami.css'
+	},
+	{
 		page: '404',
 		html: 'src/index.html',
 		js: 'src/404.js',

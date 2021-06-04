@@ -32,6 +32,18 @@ var pages = [
 		html: 'src/index.html',
 		js: 'src/kotori.js',
 		css: 'src/kotori.css'
+	},
+	{
+		page: 'projects/megumi',
+		html: 'src/index.html',
+		js: 'src/megumi.js',
+		css: 'src/megumi.css'
+	},
+	{
+		page: '404',
+		html: 'src/index.html',
+		js: 'src/404.js',
+		css: 'src/404.css'
 	}
 ]
 

@@ -1,0 +1,17 @@
+@import 'main';
+.main > .cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	> * {
+		text-align: center;
+		margin: 4px auto;
+	}
+	.a {
+		font-size: 100px;
+		line-height: 1;
+	}
+	.b {
+		font-size: 22px;
+	}
+}

@@ -17,7 +17,7 @@ class site extends IAR {
 			{s: {display: this.data.ui == 1 ? 'block' : 'none'}, t:'div', cl: 'main', ch: [
 				{t: 'div', cl: ['cont', 'doc'], at: {id:'main', role:'main'}, ch: [
 					{t: 'h1', cl: 'title', txt: 'Kotori'},
-					{t: 'div', cl: 'img', s: {'background-image': 'url(https://i.imgur.com/eUYPYEL.jpg)'}},
+					{t: 'div', cl: 'img', s: {'background-image': 'url(/images/kotori-0.jpg)'}},
 					{t: 'p', cl: 'intro', nodes: 1, ch: [
 						{t: 'b', txt: 'Project name:'}, ' Kotori',
 						{t: 'br'},

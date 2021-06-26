@@ -15,10 +15,11 @@
 	"browserslist": "defaults, not ie 11, not ie_mob 11",
 	"devDependencies": {
 		"@babel/preset-env": "^7.13.10",
+		"@IC-Tech/ic-md": "npm:@ic-tech/ic-md@^1.1.3",
 		"@rollup/plugin-babel": "^5.3.0",
 		"@rollup/plugin-node-resolve": "^11.2.0",
-		"cssnano": "^4.1.10",
-		"cssnano-preset-advanced": "^4.0.7",
+		"cssnano": "^3.10.0",
+		"cssnano-preset-advanced": "^5.1.3",
 		"ic-app": "^1.2.1",
 		"ic-xml": "^1.2.0",
 		"postcss": "^8.2.8",

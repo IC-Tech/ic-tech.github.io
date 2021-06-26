@@ -3,7 +3,8 @@ const
 	resolve = require('@rollup/plugin-node-resolve').default,
 	babel = require('@rollup/plugin-babel').default,
 	terser = require('rollup-plugin-terser').terser,
-	sass_loader = require('./sass-loader')
+	sass_loader = require('./sass-loader'),
+	md_loader = require('./md-loader')
 
 async function build_(inputOptions, outputOptions) {
 	const bundle = await rollup.rollup(inputOptions);
@@ -20,6 +21,7 @@ const build = async op => {
 					dir: op.css_dir,
 					banner: op.banner = (op.mode == 'dev' ? undefined : op.banner)
 				}),
+				md_loader(),
 				resolve(),
 				babel({ babelHelpers: 'bundled' })
 			]

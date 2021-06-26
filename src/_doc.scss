@@ -6,10 +6,16 @@
 	    box-sizing: border-box;
 	}
 	h1, h2, h3, h4, h5, h6 {
-		margin-top: 24px;
-		margin-bottom: 16px;
 		font-weight: 600;
 		line-height: 1.25;
+	}
+	h1, h2 {
+		margin-top: 24px;
+		margin-bottom: 14px;
+	}
+	h3, h4, h5, h6 {
+		margin-top: 20px;
+		margin-bottom: 10px;
 	}
 	a {
 		color: c(6);
@@ -19,8 +25,20 @@
 		}
 	}
 	blockquote, ol, p, pre, table, ul {
-		margin-top: 0;
-		margin-bottom: 16px;
+		margin: 0 0 16px;
+	}
+	blockquote {
+		padding: 0 0 0 1em;
+		border-left: solid c(8) 4px;
+		blockquote, ol, p, pre, table, ul {
+			margin: 0 0 10px;
+		}
+	}
+	ul, ol {
+		padding-left: 2em;
+	}
+	ul[data-type="task list"] {
+		list-style: none;
 	}
 	table {
 		display: block;
@@ -38,5 +56,12 @@
 			padding: 6px 13px;
 			border: 1px solid c(4);
 		}
+	}
+	code {
+		color: c(7);
+		font-size: 0.9rem;
+	}
+	img {
+		border-radius: 4px;
 	}
 }

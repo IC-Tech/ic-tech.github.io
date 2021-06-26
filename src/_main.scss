@@ -2,22 +2,24 @@
 	@return var(--color-#{$n});
 }
 body {
-	--color-0: #1e1e1e;
-	--color-1: #eee;
-	--color-2: #252526;
-	--color-3: #2d2d30;
-	--color-4: #3e3e42;
+	--color-0: #ffffff;
+	--color-1: #000000;
+	--color-4: #c6c6c6;
 	--color-5: #007acc;
-	--color-6: #16b3f0;
+	--color-6: #064acc;
+
+	--color-7: #a40825;
+	--color-8: #6c6c77;
 }
 body[theme="dark"] {
 	--color-0: #1e1e1e;
-	--color-1: #eee;
-	--color-2: #252526;
-	--color-3: #2d2d30;
+	--color-1: #eeeeee;
 	--color-4: #3e3e42;
 	--color-5: #007acc;
 	--color-6: #16b3f0;
+
+	--color-7: #f2da1a;
+	--color-8: #848491;
 }
 #root, .main {
 	background-color: c(0);

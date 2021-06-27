@@ -23,27 +23,19 @@ JS_DIR = 'scripts', CSS_DIR = 'styles'
 var pages = [
 	{
 		page: 'index',
-		html: 'src/index.html',
-		js: 'src/index.js',
-		css: 'src/index.css'
+		md: 'src/index.md'
 	},
 	{
 		page: 'projects/kotori',
-		html: 'src/index.html',
-		js: 'src/kotori.js',
-		css: 'src/kotori.css'
+		md: 'src/kotori.md'
 	},
 	{
 		page: 'projects/megumi',
-		html: 'src/index.html',
-		js: 'src/megumi.js',
-		css: 'src/megumi.css'
+		md: 'src/megumi.md'
 	},
 	{
 		page: 'projects/ami',
-		html: 'src/index.html',
-		js: 'src/ami.js',
-		css: 'src/ami.css'
+		md: 'src/ami.md'
 	},
 	{
 		page: '404',
@@ -56,7 +48,7 @@ var pages = [
 // -- badic config end --
 
 .map(a => {
-	['html', 'js', 'css'].forEach(b => a[b] && (a[b] = paths(a[b])))
+	['html', 'js', 'css', 'md'].forEach(b => a[b] && (a[b] = paths(a[b])))
 	return a
 })
 const prf = {
@@ -71,6 +63,18 @@ module.exports = {
 	build: async (source, output, r) => {
 		r.copyDir(source + '/public', output)
 
+		var md_cache = '', md_dir = output + '/md_tmp'
+		r.mkdir(md_dir)
+		for (var i = 0; i < pages.length; i++) {
+			if(!pages[i].md) continue
+			if(!md_cache) md_cache = fs.readFileSync(source + '/md-page-gen.js').toString()
+			var b = paths_(pages[i].md, source)
+			b = [b, path.parse(md_dir + '/' + b)]
+			b[1] = b[1].dir + '/' + b[1].name
+			pages[i].css = b[1] + '.css'
+			pages[i].html = source + '/index.html'
+			fs.writeFileSync(pages[i].js = b[1] + '.js', md_cache.replaceAll('$DIR', source).replaceAll('$PAGE', b[0]))
+		}
 		await js_build({
 			input: pages.map(a => a.js).filter(a => a),
 			css_dir: output + '/' + CSS_DIR,
@@ -78,6 +82,7 @@ module.exports = {
 			mode: r.config.mode,
 			banner: banner
 		})
+		pages = pages.map(a => a.md && ['js', 'css'].forEach(b => a[b] = source + '/' + paths_(a[b], md_dir)) && 0 || a)
 		for (var i = 0; i < pages.length; i++) if(pages[i].html) {
 			var a = fs.readFileSync(pages[i].html).toString()
 			.replace(/<\/([ \t]*)?body>/i, a => {
@@ -93,5 +98,6 @@ module.exports = {
 			r.mkdir(output + '/projects')
 			fs.writeFileSync(output + '/' + pages[i].page + '.html', r.config.mode == 'dev' ? a : html.f(a, html_banner))
 		}
+		fs.rmSync(md_dir, {recursive: !0})
 	}
 }

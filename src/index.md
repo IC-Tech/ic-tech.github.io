@@ -12,7 +12,7 @@ My name is *Imesh Chamara* (eemesh chamara). I had my first computer at 13 and I
 | ---- | ------- | ------ |
 | Github | [IC-Tech](https://github.com/IC-Tech) | Active
 | Gitlab | [IC-Tech](https://gitlab.com/IC-Tech) | Active
-| Email | [imesh1chamara@gmail.com](mailto:imesh1chamara@gmail.com) | Active
+| Email | <imesh1chamara@gmail.com> | Active
 | Telegram | [ImeshChamara](https://t.me/ImeshChamara) | Active
 | Twitter | [@\_Imesh\_Chamara\_](https://twitter.com/_Imesh_Chamara_) | Active (rarely)
 | Discord | [ImeshChamara#1418](https://discord.com/users/473941394474401813) | Active (rarely)
@@ -22,8 +22,24 @@ My name is *Imesh Chamara* (eemesh chamara). I had my first computer at 13 and I
 
 
 ### Projects
-Project Names and Code Names | Start Date
--- | --
-[Megumi bot (Lwgj4Sg)](projects/megumi.html) | 2020/01/03 20:40 +0530
-[Ami bot (LwiRbNg)](projects/ami.html) | 2020/07/21 12:24 +0530
-[Kotori bot (Lwit95M, Lw5Kb80)](projects/kotori.html) | 2020/09/08 17:47 +0530
+Project Names | ID Codes | Start Date
+-- | -- | --
+Chat App | `LwJ98b8` | 2019/05/27 12:31 +0530
+[ic-app](projects/ic-app.html) || 2019/07/22 12:47 +0530 (~ before)
+ILog | `LwKbtHc` | 2019/07/22 16:23 +0530
+SSAS | `LwK4PZs`, `LwK5I+0`, `LwK5TMc` | 2019/09/09 17:39 +0530
+IChat | `LwLHMos` | 2019/10/07 19:47 +0530
+[Megumi bot](projects/megumi.html) | [`Lwgj4Sg`](projects/megumi.html) | 2020/01/03 20:40 +0530
+Score Dashboard | `Lwg3Qho` | 2020/01/30 20:42 +0530
+HLS Downloader | `LwhU/QM` | 2020/03/25 04:35 +0530
+Subtitle Maker | `LwhhEhM` | 2020/04/04 22:59 +0530
+IAnime | `LwhywD8` | 2020/05/20 09:59 +0530
+[Ami bot](projects/ami.html) | [`LwiRbNg`](projects/ami.html) | 2020/07/21 12:24 +0530
+IUrl | `LwifyDw` | 2020/08/15 21:24 +0530
+[Kotori bot](projects/kotori.html) | [`Lwit95M`, `Lw5Kb80`](projects/kotori.html) | 2020/09/08 17:47 +0530
+ic-xml | `Lwi9NvQ` | 2020/10/08 10:12 +0530
+ic-xentity | `Lwi9N1I` | 2020/10/08 11:06 +0530
+Proxy | `LwjMyBo` | 2020/11/10 12:10 +0530
+host-file || 2020/11/12 03:59 +0530
+ic-md | `Lw48GEE` | 2021/02/28 23:05 +0530
+text-filter | `Lw5mLVg` | 2021/05/04 02:16 +0530

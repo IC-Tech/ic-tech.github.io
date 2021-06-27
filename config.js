@@ -21,22 +21,11 @@ html_banner = `Copyright © ${banner_year} ${pkg.author}`
 JS_DIR = 'scripts', CSS_DIR = 'styles'
 
 var pages = [
-	{
-		page: 'index',
-		md: 'src/index.md'
-	},
-	{
-		page: 'projects/kotori',
-		md: 'src/kotori.md'
-	},
-	{
-		page: 'projects/megumi',
-		md: 'src/megumi.md'
-	},
-	{
-		page: 'projects/ami',
-		md: 'src/ami.md'
-	},
+	{ page: 'index', md: 'src/index.md' },
+	{ page: 'projects/kotori', md: 'src/kotori.md' },
+	{ page: 'projects/megumi', md: 'src/megumi.md' },
+	{ page: 'projects/ami', md: 'src/ami.md' },
+	{ page: 'projects/ic-app', md: 'src/ic-app.md' },
 	{
 		page: '404',
 		html: 'src/index.html',

@@ -26,6 +26,9 @@ var pages = [
 	{ page: 'projects/megumi', md: 'src/megumi.md' },
 	{ page: 'projects/ami', md: 'src/ami.md' },
 	{ page: 'projects/ic-app', md: 'src/ic-app.md' },
+	{ page: 'projects/ilog', md: 'src/ilog.md' },
+	{ page: 'projects/ssas', md: 'src/ssas.md' },
+	{ page: 'projects/dashboard', md: 'src/dashboard.md' },
 	{
 		page: '404',
 		html: 'src/index.html',

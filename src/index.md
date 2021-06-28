@@ -26,11 +26,11 @@ Project Names | ID Codes | Start Date
 -- | -- | --
 Chat App | `LwJ98b8` | 2019/05/27 12:31 +0530
 [ic-app](projects/ic-app.html) || 2019/07/22 12:47 +0530 (~ before)
-ILog | `LwKbtHc` | 2019/07/22 16:23 +0530
-SSAS | `LwK4PZs`, `LwK5I+0`, `LwK5TMc` | 2019/09/09 17:39 +0530
+[ILog](projects/ilog.html) | [`LwKbtHc`](projects/ilog.html) | 2019/07/22 16:23 +0530
+[SSAS](projects/ssas.html) | [`LwK4PZs`, `LwK5I+0`, `LwK5TMc`](projects/ssas.html) | 2019/09/09 17:39 +0530
 IChat | `LwLHMos` | 2019/10/07 19:47 +0530
 [Megumi bot](projects/megumi.html) | [`Lwgj4Sg`](projects/megumi.html) | 2020/01/03 20:40 +0530
-Score Dashboard | `Lwg3Qho` | 2020/01/30 20:42 +0530
+[Score Dashboard](projects/dashboard.html) | [`Lwg3Qho`](projects/dashboard.html) | 2020/01/30 20:42 +0530
 HLS Downloader | `LwhU/QM` | 2020/03/25 04:35 +0530
 Subtitle Maker | `LwhhEhM` | 2020/04/04 22:59 +0530
 IAnime | `LwhywD8` | 2020/05/20 09:59 +0530

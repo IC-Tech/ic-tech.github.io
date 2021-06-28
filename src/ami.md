@@ -7,8 +7,10 @@
 **Access:** private<br>
 **Project status:** fail-end<br>
 **Program status:** experimental
+
 ### Description
 Ami is the first experimental AI system I (Imesh Chamara) made. first all basic experiments are ended well but in the end I didn't had enough data to finish the project. everything is very basic, project is useless and worthless but it's a start.
+
 ### FAQ
 **Does Ami is an AI?**
 > Yes. but not an advanced AI.
@@ -18,5 +20,6 @@ Ami is the first experimental AI system I (Imesh Chamara) made. first all basic 
 > No.
 **Can I see her? / Can I chat with her?**
 > No.
+
 ### More
 [Contact or Questions](mailto:imesh1chamara@gmail.com)

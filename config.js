@@ -89,7 +89,8 @@ module.exports = {
 				if(pages[i].css) d += prf.css(paths_(pages[i].css, source))
 				return d + a
 			})
-			r.mkdir(output + '/projects')
+			var e = path.parse(pages[i].page).dir
+			if(e) r.mkdir(output + '/' + e)
 			fs.writeFileSync(output + '/' + pages[i].page + '.html', r.config.mode == 'dev' ? a : html.f(a, html_banner))
 		}
 		fs.rmSync(md_dir, {recursive: !0})

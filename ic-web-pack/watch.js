@@ -6,7 +6,7 @@ const http = require('http')
 const path = require('path')
 const contentTypes = require('./data.json').contentTypes
 const { WS } = require('./WS')
-const path_resolve = a => path.resolve(process.env.PWD, a)
+const path_resolve = a => path.resolve('.', a)
 var config = require('./cli')('ic-web-pack', {
 	serve: {
 		comms: ['s', 'serve', 'server'],

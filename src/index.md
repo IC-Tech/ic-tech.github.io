@@ -1,6 +1,6 @@
 # IC-Tech
 ### About me
-*~ ♂️ Male | INFJ-T | 18yr (2020) | Sri Lanka | Different ~*<br>
+*~ ♂️ Male | INFJ-T | Sri Lanka | Different ~*<br>
 My name is *Imesh Chamara* (eemesh chamara). I had my first computer at 13 and I wrote my first code after six month. after that coding became my hobby. I code stuff all day just for fun. I started coding with a microcontroller then I stared coding windows apps. with the time, I become a *Full Stack Developer*. that means, I can make apps for Windows and Linux. I can make websites, and web servers. I also tried out simple AI projects, but they all just failed. I didn't learn these in proper way so, I'm not a smart pro developer. I don't have many things to write, because still haven't accomplish much things in my life.
 
 + Things I Like: *Programming, J-POP, Japan.*

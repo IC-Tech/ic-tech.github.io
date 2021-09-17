@@ -9,7 +9,7 @@
 **Program status:** unstable
 
 ### Description
-Kotori is an assistant bot made by me (Imesh Chamara). project kotori is different than all the project I have created because it's not just a project, it's a concept. I got that concept by Iron-man, I wanted my own Jarvis, I wanted my own assistant program. the first versions of kotori, she got little AI system but I couldn't train the database properly and now she looks like a command bot. she got lots of features and I still adding more.
+Kotori is an assistant bot made by me (Imesh Chamara). project kotori is little different from all other projects I have created, because it's not just a project, it's a concept. I got that concept by Iron-man, I wanted my own Jarvis, I wanted my own assistant program. the first versions of kotori, she got little AI system but I couldn't train the database properly and after removing it, she started to look like a command bot. she got lots of features and I still adding more. after few incidents I lost some resources and the project got messed up, but I still working on this. its still little too far to achieve my goal.
 
 ### Plans  
 I need to train the AI database and make her more human friendly.
@@ -19,17 +19,18 @@ I also have a plan to made her voice controllable (like google assistant).<br>
 ### Cores (Systems/Features)
 Codename | State
 -- | --
-NLP (AI) | ⛔ removed
-FLP (Fake AI) | ❌ incomplete
-YT | ❌ incomplete
+SYS | ⛔ Removed
+NLP (AI) | ⛔ Removed
+FLP (Fake AI) | ❌ Incomplete
+YT | ❌ Incomplete
 SC | 🆗 OK
 NICO | 🆗 OK
-DISCO | 🆗 OK
-TASK | 🆗 OK
-TG | ⛔ restoring
+DISC | 🆗 OK
+TASK | 😴 Unavailable
+TG | ❌ Incomplete
 
 ### Credits
-I created the everything on her, only me. there are no others to credit.
+Kotori were completely made of [IC-Tech](/) components, modules, cores, packages. there aren't any other to be credited.
 
 ### FAQ
 **Does Kotori is an AI?**

@@ -7,7 +7,7 @@ You might think what is my problem with the file size, basically I don't like hu
 
 ## Example
 *This website also rendered using the ic-app.*<br>
-The following is a simple example of a "clock". I create empty webpage and target the `body` of the page.
+The following is a simple example of a "clock". The code create empty webpage and target the `body` of the page.
 ```html
 <!DOCTYPE html>
 <html>
@@ -39,20 +39,20 @@ new sample().mount('body')
 	<body></body>
 </html>
 ```
-*(want to test this, checkout [jsbin](https://jsbin.com/zofosej), [codepen](https://codepen.io/ImeshChamara/pen/KKmPedZ), [jsfiddle](https://jsfiddle.net/IC_Tech/g9pt2seq/))*
+*(test or checkout this code on [jsbin](https://jsbin.com/zofosej), [codepen](https://codepen.io/ImeshChamara/pen/KKmPedZ), [jsfiddle](https://jsfiddle.net/IC_Tech/g9pt2seq/))*
 
 ## Links
 source code: [Github](https://github.com/IC-Tech/ic-app), [Gitlab](https://gitlab.com/IC-Tech/ic-app)<br>
 npm package: [npmjs](https://www.npmjs.com/package/ic-app)<br>
-CDN link (**not recommended**): <https://cdn.jsdelivr.net/gh/IC-Tech/ic-app/build/ic-app.js><br>
+CDN link: <https://cdn.jsdelivr.net/gh/IC-Tech/ic-app/build/ic-app.js><br>
 Minified CDN link (**recommended**): <https://cdn.jsdelivr.net/gh/IC-Tech/ic-app/build/ic-app.min.js>
 
 ## FAQ
 **What is `ic-app`?**
-> it's a client-render framework, JavaScript library and a npm package.
+> it's a client-render framework, JavaScript library, module and a npm package.
 
 **What can it do?**
-> it can create and update your website simple and fast.
+> it can create and update your webpages in simple and fast.
 
 **What is so special about `ic-app`?**
 > nothing, it just a simple library.

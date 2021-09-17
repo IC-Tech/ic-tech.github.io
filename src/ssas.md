@@ -3,7 +3,7 @@ Project `SSAS` is not my own project. few friends asked me to code it. The name 
 
 ### Credits
 - used [chart.js](https://www.chartjs.org/), [ic-app](/projects/ic-app.html)
-- Credits to original project owners
+- to original project owners
 
 ### More
 [Contact or Questions](mailto:imesh1chamara@gmail.com)

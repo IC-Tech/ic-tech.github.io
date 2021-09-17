@@ -4,7 +4,9 @@ const
 	babel = require('@rollup/plugin-babel').default,
 	terser = require('rollup-plugin-terser').terser,
 	sass_loader = require('./sass-loader'),
-	md_loader = require('./md-loader')
+	md_loader = require('./md-loader'),
+	commonjs = require('@rollup/plugin-commonjs'),
+	json = require('@rollup/plugin-json')
 
 async function build_(inputOptions, outputOptions) {
 	const bundle = await rollup.rollup(inputOptions);
@@ -13,8 +15,10 @@ async function build_(inputOptions, outputOptions) {
 }
 const build = async op => {
 	for (var i = op.input.length - 1; i >= 0; i--) { // https://i.imgur.com/PGBHgOT.jpg
+		var a = op.input[i]
+		if(typeof a == 'string') a = {js: a}
 		await build_({
-			input: op.input[i],
+			input: a.js,
 			plugins: [
 				sass_loader({
 					mode: op.mode,
@@ -23,11 +27,13 @@ const build = async op => {
 				}),
 				md_loader(),
 				resolve(),
-				babel({ babelHelpers: 'bundled' })
+				babel({ babelHelpers: 'bundled' }),
+				commonjs(),
+				json()
 			]
 		}, {
 			dir: op.js_dir,
-			format: 'iife',
+			format: a.format || 'iife',
 			plugins: op.mode == 'dev'? [] : [terser()],
 			sourcemap: op.mode == 'dev',
 			banner: op.banner

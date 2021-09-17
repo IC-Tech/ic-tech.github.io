@@ -70,7 +70,7 @@ module.exports = {
 			fs.writeFileSync(pages[i].js = b[1] + '.js', md_cache.replaceAll('$DIR', source).replaceAll('$PAGE', b[0]))
 		}
 		await js_build({
-			input: pages.map(a => a.js).filter(a => a),
+			input: pages.map(a => a.html ? a.js : {js: a.js, format: 'es'}).filter(a => a),
 			css_dir: output + '/' + CSS_DIR,
 			js_dir: output + '/' + JS_DIR,
 			mode: r.config.mode,

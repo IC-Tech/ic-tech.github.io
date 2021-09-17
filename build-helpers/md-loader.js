@@ -10,7 +10,7 @@ const md_loader = op => {
 			return null
 		},
 		load(id) {
-			if (filter(id) && fs.statSync(id, {throwIfNoEntry: false})) return 'var a=' + JSON.stringify(parse(fs.readFileSync(id).toString())).replace(/"([\w]*)"\s?:/g, (a,b) => b + ':') + ';export default a'
+			if (filter(id) && fs.statSync(id, {throwIfNoEntry: false})) return 'var a=' + JSON.stringify(parse(fs.readFileSync(id).toString(), op)).replace(/"([\w]*)"\s?:/g, (a,b) => b + ':') + ';export default a'
 			return null
 		}
 	}

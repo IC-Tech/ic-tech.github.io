@@ -1,9 +1,9 @@
-const md = require('@IC-Tech/ic-md')
+const md = require('ic-md')
 const md_parse = (a, op) => {
 	op = Object.assign({ids:[]}, op || {})
 	return a.map(a => {
 		if(!a || typeof a == 'string') return a
-		if(a.ch && a.ch instanceof Array && a.ch.length > 0 && a.ch.some(a => typeof a == 'string')) a.nodes = 1
+		a.nodes = 1
 		if(a.t == 'link') {
 			a.t = 'a'
 			a.at = {href: a.url}
@@ -13,6 +13,7 @@ const md_parse = (a, op) => {
 			a.at = {src: a.url, alt: a.ch}
 			if(a.alt) a.at.title = a.alt
 			delete a.ch
+			delete a.nodes
 		}
 		if(a.t == 'img' || a.t == 'a') {
 			delete a.url
@@ -56,6 +57,7 @@ const md_parse = (a, op) => {
 			delete a.lang
 		}
 		if(a.t == 'ul' || a.t == 'ol' || a.t == 'cl') {
+			delete a.nodes
 			a.ch = a.ch.map(a => {
 				a.a = md_parse(a.a)
 				a.b = md_parse(a.b)
@@ -82,6 +84,7 @@ const md_parse = (a, op) => {
 			return a
 		}
 		if(a.t == 'table') {
+			delete a.nodes
 			a.ch = a.ch.map((a,i) => ({t: 'tr', ch: a.map((a,b) => Object.assign({t: i ? 'td' : 'th', [(b = a.length == 0 || (a.length == 1 && typeof a[0] == 'string')) ? 'txt' : 'ch']: b ? (a[0] || '') : md_parse(a)}, b ? {} : {nodes: 1}))}))
 			a.ch = [
 				{t: 'thead', ch: [a.ch[0]]},
@@ -93,6 +96,6 @@ const md_parse = (a, op) => {
 		return a
 	})
 }
-const parse = a => md_parse(md.parse(a))
+const parse = (a, op) => md_parse(md.parse(a, op), op)
 parse.md_parse = md_parse
 module.exports = parse

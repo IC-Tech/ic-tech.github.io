@@ -31,6 +31,7 @@ var pages = [
 	{ page: 'projects/dashboard', md: 'src/dashboard.md' },
 	{ page: 'projects/text-filter', md: 'src/text-filter.md' },
 	{ page: 'projects/host-file', md: 'src/host-file.md' },
+	{ page: 'projects/IAProto', md: 'src/IAProto.md' },
 	{
 		page: '404',
 		html: 'src/index.html',
